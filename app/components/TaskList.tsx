@@ -405,7 +405,7 @@ export const TaskList = () => {
                   id="task_due_date"
                   name="date"
                   type="date"
-                  value={taskOpen.due}
+                  value={taskOpen.due || ""}
                   className="w-5"
                   onChange={handleDateChange}
                 />
