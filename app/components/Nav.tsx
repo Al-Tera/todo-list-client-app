@@ -1,36 +1,21 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-import styles from "../styles/layout.module.css";
+import Link from "next/link";
 
 export const Nav = () => {
   const pathname = usePathname();
 
   return (
-    <nav className={styles.nav}>
-      <Link
-        className={`${styles.link} ${pathname === "/" ? styles.active : ""}`}
-        href="/"
-      >
-        Home
+    <nav className="flex flex-col w-[10%] pl-2 pt-2 border-r-3 border-gray-300">
+      <Link href="/" className={`${pathname === "/" ? "underline" : ""}`}>
+        Task
       </Link>
       <Link
-        className={`${styles.link} ${
-          pathname === "/verify" ? styles.active : ""
-        }`}
-        href="/verify"
+        href="/history"
+        className={`${pathname === "/history" ? "underline" : ""}`}
       >
-        Verify
-      </Link>
-      <Link
-        className={`${styles.link} ${
-          pathname === "/quotes" ? styles.active : ""
-        }`}
-        href="/quotes"
-      >
-        Quotes
+        History
       </Link>
     </nav>
   );
