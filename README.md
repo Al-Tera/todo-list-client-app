@@ -1,16 +1,24 @@
-## How to build
+# How to build
 
-# Open a terminal 
+1. Open a terminal 
 
-# Clone the repository
+2. Clone the repository
+```
 git clone https://github.com/Al-Tera/todo-list-client-app.git
-
-# Navigate to the project directory
+```
+3. Navigate to the project directory
+```
 cd todo-list-client-app
+```
 
-# Install necessary libraries
+4. Install necessary libraries and packages
+```
+npm install
 npm install react-use
 npm install tailwindcss @tailwindcss/postcss postcss
+```
 
-# Run the project
+5. Run the project
+```
 npm run dev
+```
