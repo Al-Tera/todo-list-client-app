@@ -356,8 +356,8 @@ export const TaskList = () => {
             })}
         </div>
       </div>
-      <div className=" pl-2 pt-2 ">
-        <div className="cursor-pointer w-fit" ref={titleRef}>
+      <div className=" pl-2 pt-2 w-full ">
+        <div className="cursor-pointer w-full" ref={titleRef}>
           <div className="flex relative w-full mb-5">
             <form
               action="submit"
